@@ -1,0 +1,9 @@
+[
+  {
+    "TimeGenerated": "2024-06-10T12:00:00Z",
+    "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "powershell.exe -enc JABXAG8A...",
+    "ParentImage": "C:\\Windows\\explorer.exe",
+    "User": "testuser"
+  }
+] 

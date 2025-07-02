@@ -1,0 +1,7 @@
+rule_id: 123e4567-e89b-12d3-a456-426614174000
+rule_title: Suspicious PowerShell Execution
+mitre_attack:
+  tactic: Execution
+  technique:
+    id: T1059.001
+    name: PowerShell 

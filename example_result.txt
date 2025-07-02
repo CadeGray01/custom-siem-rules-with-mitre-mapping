@@ -1,0 +1,4 @@
+Rule: Suspicious PowerShell Execution
+Test Log: example_log.json
+Result: MATCHED
+Details: The test log triggered the detection rule as expected. 

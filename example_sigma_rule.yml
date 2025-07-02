@@ -1,0 +1,24 @@
+title: Suspicious PowerShell Execution
+id: 123e4567-e89b-12d3-a456-426614174000
+description: Detects suspicious PowerShell command line activity
+status: experimental
+author: Your Name
+date: 2024/06/10
+logsource:
+  product: windows
+  service: security
+  category: process_creation
+detection:
+  selection:
+    Image|endswith: '\\powershell.exe'
+    CommandLine|contains|all:
+      - '-enc'
+      - 'Invoke-Expression'
+  condition: selection
+fields:
+  - CommandLine
+  - ParentImage
+  - User
+falsepositives:
+  - Legitimate admin activity
+level: high 
